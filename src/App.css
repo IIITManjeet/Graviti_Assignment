@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+body{
+    background: #F4F8FA
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .navBar{
+    height: 80px;
+    left: 0px;
+    right: 0px;
+    display:flex;
+    top: 0px;
+    align-items: center;
+    background: #FFFFFF;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .navBar img{
+    width: 160px;
+    height: 69px;
+    position: absolute;
+    left: 67px;
+    top: 6px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .main-container{
   display: flex;
   flex-direction: column;
+  align-items:center ;
+}
+.App .main-container p{
+    height: 24px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #1B31A8;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.App .main-container .content{
+  left:100px;
+  width: 80%;
+  right: 40px;
+  display: flex;
+  gap:70px;
+}
+.App .main-container .content .left{
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  align-items: stretch;
+  gap: 20px;
+}
+.App .main-container .content .left .entries{
+  display: flex;
+  flex-direction: row;
+  gap: 66px;
+}
+.App .main-container .content .left .entries .data{
+  display: flex;
+  gap: 52px;
+  flex: 1;
+  flex-direction: column;
+}
+.App .main-container .content .left .entries .data .origin{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.App .main-container .content .left .entries .data .origin span{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+}
+.App .main-container .content .left .entries .data .origin input {
+  height: 30px;
+}
+.App .main-container .content .left .entries .data .stop{
+display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.App .main-container .content .left .entries .data .stop span{
+      font-family: 'IBM Plex Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      display: flex;
+      align-items: center;
+}
+.App .main-container .content .left .entries .data .stop input{
+  height: 30px;
+}
+.App .main-container .content .left .entries .data .stop .add{
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+}
+.App .main-container .content .left .entries .data .stop .add img{
+  margin-right: 4px;
+  height: 15.75px;
+  width: 15.75px;
+}
+.App .main-container .content .left .entries .data .destination{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.App .main-container .content .left .entries .data .destination input {
+  height: 30px;
+}
+
+.App .main-container .content .left .entries .data .destination span{
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  display: flex;
   align-items: center;
+}
+
+.App .main-container .content .left button{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 100px;
+  border-radius: 32px;
+  align-items: center;
+  height: 62px;
+  background: #1B31A8;
+  color:#FFFFFF;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  width: 161px;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.App .main-container .content .left .distance{
+  display:flex;
+  flex-direction: column;
+  height: 50px;
+  gap: 6px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .main-container .content .left .distance .display{
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20px;
+  justify-content: space-between;
+  padding: 15px;
+}
+.App .main-container .content .left .distance .text{
+    display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 20px;
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      padding: 5px;
+      line-height: 120%;
+      color: #1E2A32;
+}
+.App .main-container .content .left .distance .display h3{
+  font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 20px;
+}
+.App .main-container .content .left .distance .display span{
+  font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: right;
+    color: #0079FF;
+}
+.App .main-container .content .right {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
 }
