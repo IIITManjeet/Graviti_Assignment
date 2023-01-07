@@ -1,6 +1,8 @@
 body{
     background: #F4F8FA
 }
+.App{
+}
 .App .navBar{
     height: 80px;
     left: 0px;
@@ -190,7 +192,10 @@ display: flex;
     color: #0079FF;
 }
 .App .main-container .content .right {
-  display: flex;
-  flex-direction: column;
   flex: 0.5;
+  width: 50%;
+}
+.App .main-container .content .right{
+  width: 500px;
+  height: 411px;
 }
